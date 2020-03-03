@@ -54,6 +54,7 @@ export const auth = (email, password, isSignup) => {
       url =
         "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAfs6Kx9AQlrE4-GRVf4CbNpOdYAuJbVb8";
     }
+
     axios
       .post(url, authData)
       .then(response => {

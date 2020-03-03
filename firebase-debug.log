@@ -1,0 +1,75 @@
+[debug] [2020-03-02T23:57:39.794Z] ----------------------------------------------------------------------
+[debug] [2020-03-02T23:57:39.801Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dikez\OneDrive\Documentos\My Lessons\React.Js\burger_builder\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-03-02T23:57:39.802Z] CLI Version:   7.14.0
+[debug] [2020-03-02T23:57:39.802Z] Platform:      win32
+[debug] [2020-03-02T23:57:39.803Z] Node Version:  v10.15.3
+[debug] [2020-03-02T23:57:39.807Z] Time:          Mon Mar 02 2020 20:57:39 GMT-0300 (GMT-03:00)
+[debug] [2020-03-02T23:57:39.807Z] ----------------------------------------------------------------------
+[debug] [2020-03-02T23:57:39.808Z] 
+[debug] [2020-03-02T23:57:39.948Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-02T23:57:39.953Z] > authorizing via signed-in user
+[debug] [2020-03-02T23:57:39.954Z] [iam] checking project react-my-burger-4d98f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-03-02T23:57:39.969Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-my-burger-4d98f:testIamPermissions  
+
+[debug] [2020-03-02T23:57:41.214Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-02T23:57:41.225Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/react-my-burger-4d98f  
+ 
+[debug] [2020-03-02T23:57:42.655Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'react-my-burger-4d98f'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-03-02T23:57:42.689Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/react-my-burger-4d98f/versions  
+
+[debug] [2020-03-02T23:57:45.048Z] <<< HTTP RESPONSE 200
+[info] i  hosting[react-my-burger-4d98f]: beginning deploy...
+[info] i  hosting[react-my-burger-4d98f]: found 31 files in build
+[debug] [2020-03-02T23:57:45.307Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2020-03-02T23:57:46.185Z] [hosting] hash cache [YnVpbGQ] stored for 31 files
+[debug] [2020-03-02T23:57:46.186Z] [hosting][hash queue][FINAL]
+[debug] [2020-03-02T23:57:46.186Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/react-my-burger-4d98f/versions/6eceaa1a309a3061:populateFiles  
+ <request body omitted>
+[debug] [2020-03-02T23:57:47.777Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-02T23:57:47.880Z] [hosting][populate queue][FINAL]
+[debug] [2020-03-02T23:57:47.881Z] [hosting] uploads queued: 31
+[debug] [2020-03-02T23:57:51.747Z] [hosting][upload queue][FINAL]
+[info] +  hosting[react-my-burger-4d98f]: file upload complete
+[debug] [2020-03-02T23:57:51.752Z] [hosting] deploy completed after 6667ms
+[debug] [2020-03-02T23:57:51.911Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "react-my-burger-4d98f"
+    },
+    "site": "react-my-burger-4d98f",
+    "version": "sites/react-my-burger-4d98f/versions/6eceaa1a309a3061"
+  }
+]
+[info] i  hosting[react-my-burger-4d98f]: finalizing version...
+[debug] [2020-03-02T23:57:52.022Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/react-my-burger-4d98f/versions/6eceaa1a309a3061?updateMask=status  
+
+[debug] [2020-03-02T23:57:53.176Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-02T23:57:53.177Z] [hosting] finalized version for react-my-burger-4d98f:
+[info] +  hosting[react-my-burger-4d98f]: version finalized
+[info] i  hosting[react-my-burger-4d98f]: releasing new version...
+[debug] [2020-03-02T23:57:53.181Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/react-my-burger-4d98f/releases?version_name=sites/react-my-burger-4d98f/versions/6eceaa1a309a3061  
+
+[debug] [2020-03-02T23:57:54.283Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-02T23:57:54.284Z] [hosting] release:
+[info] +  hosting[react-my-burger-4d98f]: release complete
+[info] 
+[info] +  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/react-my-burger-4d98f/overview
+[info] Hosting URL: https://react-my-burger-4d98f.firebaseapp.com
