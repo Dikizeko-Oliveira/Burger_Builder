@@ -49,10 +49,10 @@ export const auth = (email, password, isSignup) => {
       returnSecureToken: true
     };
     let url =
-      "https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyAfs6Kx9AQlrE4-GRVf4CbNpOdYAuJbVb8";
+      "https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=*********************";
     if (!isSignup) {
       url =
-        "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAfs6Kx9AQlrE4-GRVf4CbNpOdYAuJbVb8";
+        "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=******************;
     }
 
     axios
